@@ -120,4 +120,10 @@ var d = Number(a)
 
 // Clase 7
 // Truthy & Falsy
-
+Boolean(0)
+Boolean(null)
+Boolean(NaN)
+Boolean(undefined)
+Boolean(false)
+Boolean("")
+Boolean()

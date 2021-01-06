@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Básico Javascript</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Javascript</h1>
+        <section class="grid-container">
+            <article class="clase">
+                <h2>Clase 1 - ¿Qué es Javascript?</h2>
+                <br><br>
+                <h3>¿Cómo nace Javascript?</h3>
+                <p>Nace de la necesidas de generar dinamismo en las páginas web.</p>
+                <br>
+                <h3>¿Qué es Javascript?</h3>
+                <p>Es un lenguaje interpretado, orientado a objetos, débilmente tipado y dinámico.</p>
+                <h4>Débilmente tipado:</h4>
+                <p>Se pueden hacer operaciones entre distintos tipos de datos.</p>
+                <img src="/img/DebilmenteTipado.PNG" alt="Imagen explicativa del concepto débilmente tipado">
+                <h4>Dinámico</h4>
+                <p>Corre directamente en la etapa de Runtime sin pasar por una compilación previa.</p>
+                <h4>Interpretado</h4>
+                <p>El navegador lee línea a línea el código, gracias al moto JS V8.</p>
+                <br>
+                <h3>Backwards Compatible</h3>
+                <p>Todas las funciones nuevas de JS no generan conflictos con el trabajo anterior.</p>
+            </article>
+
+            <article class="clase">
+                <h2>Clase 2 - Variables, funciones y Sintaxis</h2>
+                <br><br>
+                <h3>Componentes principales</h3>
+                <li>Datos que se guardan en memoria.</li>
+                <li>Tareas (funciones) que usan los datos.</li>
+                <br>
+
+                <h3>Tipos de datos</h3>
+                <h4>Primitivos</h4>
+                <li><code>Number</code></li>
+                <p>Este tipo de dato se usa para almacenar números, existiendo la variantes <code>BigInt</code> para números mayores a 2<sup>53</sup>-1 o menores a -2<sup>53</sup>-1. Además de aceptar valores con punto decimal, tiene valores simbólicos como: <code>+Infinity</code>, <code>-Infinity</code> y <code>NaN</code> ("Not a Number").</p>
+                <img src="img/tiposDeDatos/number.PNG" alt="Tipos de datos Number">
+                <br></br>
+                <li><code>String</code></li>
+                <p>El tipo de dato <code>String</code> es usado para representar texto.</p>
+                <p>A diferencia de otros lenguajes de programación, como <i>C</i>, las cadenas de texto en Javascript son inmutables. Esto significa que no es posible modificar la cadena una vez creada.</p>
+                <p>Sin embargo, aun es posible realizar operaciones en la cadena para obtener otra distinta.</p>
+                <img src="img/tiposDeDatos/string.PNG" alt="Tipos de datos String">
+                <br><br>
+
+                <li><code>Booleanos</code></li>
+                <p>Los valores <code>Booleanos</code> representan una entidad lógica. Pueden tener dos valores: <code>true</code> o <code>false</code></p>
+                <p>Se pueden obtener valores <code>false</code> de distintas maneras, por ejemplo: omitiendo el valor o con valores de <code>0</code>, <code>-0</code>, <code>null</code>, <code>false</code>, <code>NaN</code>, <code>undefined</code>, o una cadena vacía <code>("")</code>.</p>
+                <img src="img/tiposDeDatos/boolean.PNG" alt="Tipo de dato Booleano">
+                <br><br>
+
+                <li><code>Null</code> y <code>Undefined</code></li>
+                <p>Ambos valores <code>Null</code> y <code>Undefined</code> son conceptos abstractos.</p>
+                <p><code>Null</code> solo tiene un valor que es: <code>null</code>, se usa para representar intencionalmente un valor nulo o "vacío".</p>
+                <p>Por otra parte, <code>Undefined</code> es una variable a la que no se le ha asignado un valor, dando como resultado el "valor" <code>undefined</code></p>
+                <img src="img/tiposDeDatos/empty.PNG" alt="Tipo de dato vacío">
+                <br><br>
+
+                <h4>No primitivos</h4>
+                <p>Se le llama así a los tipos de datos más complejos, como los de tipo <code>Object</code> o los <code>Arrays</code>.</p>
+                <img src="img/tiposDeDatos/object.PNG" alt="Tipo de dato no primitivo">
+                <br>
+
+                <h3><code>typeof</code></h3>
+                <p>Recuerda que siempre puedes usar la función <code>typeof</code> nativa de Javascript para saber el tipo de dato.</p>
+                <img src="img/tiposDeDatos/typeof.PNG" alt="Imagen ilustrativa del uso de la función typeof">
+                <img src="img/tiposDeDatos/typeof2.PNG" alt="Imagen ilustrativa del uso de la función typeof">
+                <br>
+
+                <h3>Variables</h3>
+                <p>Una variable es el espacio para un valor de cualquier tipo (aunque su tipo se puede cambiar más adelante).</p>
+                <p>Existen distintas etapas en la creación de una variable "completa", como lo son la declaración y la inicialización.</p>
+                <h4>Declaración de una variable</h4>
+                <p>Existen distintos tipos de variables, pero por ahora nos enfocaremos en las declaradas a través del uso de la palabra reservada <code>var</code>. Tal como puedes ver en el siguiente ejemplo:</p>
+                <img src="img/variables/declaracionVariable.PNG" alt="Imagen ilustrativa de la declaración de una variable">
+                <p>Es importante reconocer que en esta etapa, sólamente se reserva el espacio en memoria para guardar un valor, pero que aun no se le asigna dicho valor, por lo que por ahora la variable equivale a <code>undefined</code>.</p>
+                <h4>Inicialización de una variable</h4>
+                <p>Una vez declarada la variable, es preciso asignarle un valor a través del operando <code>=</code>.</p>
+                <img src="img/variables/iniciarVariable.PNG" alt="Imagen ilustrativa de la inicialización de una variable">
+                <br>
+                <p>Se puede declarar una variable e inicializarla al mismo tiempo, no solo con tipos de datos primitivos, si no complejos también.</p>
+                <img src="img/variables/declaracionIniciarVar.PNG" alt="Imagen ilustrativa de la declaración e inicialización consecutiva de una variable">
+            </article>
+            
+        </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

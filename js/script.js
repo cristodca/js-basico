@@ -1,8 +1,8 @@
 // CLASE 1 - ¿Qué es Javascript?
-console.log(2 + "7")    //27
-console.log(2 * "7")    //14
-console.log(2 + true)  //3
-console.log(false - 2)  //-2
+2 + "7"    //27
+2 * "7"    //14
+2 + true  //3
+false - 2  //-2
 
 
 // CLASE 2 - Variables, funciones y sintaxis *********
@@ -24,13 +24,13 @@ null    // Sin registro
 undefined   // Espacio reservado sin valor
 
 // Puedes saber el tipo de dato con la función: 
-console.log(typeof 20)  // number
-console.log(typeof cristodca)   // undefined
-console.log(typeof "cristodca") // string
-console.log(typeof true)    // boolean
-console.log(typeof false)   // boolean
-console.log(typeof null)    // object
-console.log(typeof undefined)   // undefined
+typeof 20  // number
+typeof cristodca   // undefined
+typeof "cristodca" // string
+typeof true    // boolean
+typeof false   // boolean
+typeof null    // object
+typeof undefined   // undefined
 
 // Valores no primitivos =========
 // Arrays
@@ -57,11 +57,67 @@ var persona = {
 
 
 // Funciones declarativas
+
 function sumar (a, b) {
     return a + b
 }
 
-// Funciones de expresión
+
+// Funciones de expresión o anónimas
+
 var myExpressiveFunction = function (nombre) {
     return `Hola, ${nombre}`
 }
+
+
+// Clase 4
+
+// Scope Global
+
+var nombre = "cristo"
+
+function fullName() {      // Scope Local
+    var apellido = "dca"
+    return `${nombre}${apellido}`
+}
+
+
+// Clase 5
+
+// Hoisting
+
+// console.log(myFavorytePet)
+
+functHoisting()
+
+function functHoisting() {
+    // console.log(`Hola, ${myFavorytePet}`)
+}
+
+var myFavorytePet = "Brasca"
+
+
+// Clase 6
+
+// Coersión
+// Cambio de tipo de dato
+
+// Implícita 
+var a = 5 + "20"
+// console.log(`${a} = ${typeof a}`)
+
+var b = 5 * "20"
+// console.log(`${b} = ${typeof b}`)
+
+
+// Explícita
+var c = String(b)
+// console.log(`${c} = ${typeof c}`)
+
+var d = Number(a)
+// console.log(`${d} = ${typeof d}`)
+
+
+// Clase 7
+// Truthy & Falsy
+
